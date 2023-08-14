@@ -1,0 +1,32 @@
+/*
+    Serhan Bakır
+    Junior Web Developer
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --black: #000;
+    --dark: #111418;
+    --white: #fff;
+    --blue: #656bfa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
