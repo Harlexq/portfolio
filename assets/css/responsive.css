@@ -3,6 +3,53 @@
     Junior Web Developer
 */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1280px) {
+    .pages-inner .about-content {
+        flex-wrap: wrap;
+    }
+
+    .pages-inner .about-content .about-text,
+    .pages-inner .about-content .about-info {
+        width: 100%;
+    }
+
+    .home .home-inner .home-content {
+        padding: 0 50px;
+    }
+
+    .pages-inner .content-title h2 {
+        font-size: 5rem;
+    }
+
+    .pages-inner .content-title .content-text {
+        top: 35px;
+    }
+
+    .pages-inner .content-title .content-text p {
+        font-size: 1.75rem;
+    }
+
+    .pages-inner .services-content {
+       flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 817px) {
+    .inclusive .pages {
+        padding-left: 0;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .home .home-inner .home-content .wrapper {
+        display: none;
+    }
+
+    .pages-inner .content-title h2 {
+        font-size: 4.50rem;
+    }
+}
 
 @media only screen and (max-width: 500px) {}
