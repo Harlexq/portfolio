@@ -1,15 +1,17 @@
 /*
-    Serhan Bakır
+    Serhan BakÄ±r
     Junior Web Developer
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --black: #000;
-    --dark: #111418;
+    --black: #111418;
     --white: #fff;
-    --blue: #656bfa;
+    --blue: #6610f2;
+    --gray: #212529;
+    --lightgray: #343a40;
+    --muted: #8e9a9d;
 }
 
 * {
@@ -29,4 +31,143 @@ ol {
 
 body {
     font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 1320px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.inclusive {
+    display: flex;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.header .header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-inner .navbar-brand .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.header .header-inner .navbar-brand .logo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 7px solid var(--lightgray);
+}
+
+.header .header-inner .navbar-brand .logo h1 {
+    margin-top: 5px;
+    color: var(--white);
+    font-size: 21px;
+}
+
+.header .header-inner .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .header-inner .navbar .nav-item {
+    color: var(--white);
+    padding: 8px 32px;
+    transition: all .2s ease;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.header .header-inner .navbar .nav-item.active,
+.header .header-inner .navbar .nav-item:hover {
+    color: var(--blue);
+}
+
+.header .header-inner .social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-top: 13px;
+    position: relative;
+}
+
+.header .header-inner .social span {
+    background-color: var(--white);
+    color: var(--black);
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 46px;
+    left: -12px;
+    display: none;
+}
+
+.header .header-inner .social span::before {
+    content: "";
+    border: 8px solid;
+    border-color: var(--white) transparent transparent transparent;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 25px;
+}
+
+.header .header-inner .social:hover span {
+    display: block;
+}
+
+.header .header-inner .social .social-item {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    width: 35px;
+    height: 35px;
+    transition: color 0.3s ease-in-out;
+    transition-duration: 1s;
+}
+
+.header .header-inner .social .social-item::before {
+    content: "";
+    background-color: var(--blue);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.header .header-inner .social .social-item:hover::before {
+    width: 25px;
+    height: 25px;
+}
+
+.header .header-inner .social .social-item i {
+    font-size: 18px;
+    z-index: 999;
 }
