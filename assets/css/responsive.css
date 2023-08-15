@@ -4,9 +4,6 @@
 */
 
 @media only screen and (max-width: 1280px) {
-    .pages-inner .about-content {
-        flex-wrap: wrap;
-    }
 
     .pages-inner .about-content .about-text,
     .pages-inner .about-content .about-info {
@@ -29,8 +26,10 @@
         font-size: 1.75rem;
     }
 
-    .pages-inner .services-content {
-       flex-wrap: wrap;
+    .pages-inner .about-content,
+    .pages-inner .services-content,
+    .pages-inner .resume-content {
+        flex-wrap: wrap;
     }
 }
 

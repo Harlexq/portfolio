@@ -371,7 +371,7 @@ body {
     background-color: var(--gray);
 }
 
-.pages-content.services {
+.pages-content.pages-light {
     background-color: var(--lightgray);
 }
 
@@ -387,6 +387,7 @@ body {
     font-size: 8.25rem;
     opacity: 0.1;
     text-transform: uppercase;
+    user-select: none;
 }
 
 .content-title .content-text {
@@ -497,4 +498,66 @@ body {
 
 .pages-inner .services-content .services-item .sevices-item-text p {
     color: #ffffff80;
+}
+
+.pages-inner .resume-content {
+    display: flex;
+    gap: 25px;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-item-text {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-item {
+    background-color: var(--black);
+    border-radius: .375rem;
+    padding: 20px;
+    margin: 15px 0 30px 0;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-item .resume-history {
+    background-color: var(--blue);
+    font-weight: 400;
+    font-size: 14px;
+    display: inline;
+    padding: 2px 5px;
+    border-radius: .375rem;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-item h4 {
+    font-weight: 600;
+    font-size: 21px;
+    margin: 15px 0 7px 0;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-item .organisation {
+    color: var(--blue);
+}
+
+.pages-inner .resume-content .resume-content-item .resume-item .desc {
+    color: #ffffff80;
+    margin: 27px 0 0 0;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-skills {
+    display: flex;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-skills .resume-seperator {
+    display: flex;
+    flex-direction: column;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-skills .resume-seperator .resume-lang {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages-inner .resume-content .resume-content-item .resume-skills .resume-seperator .resume-sep {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--blue);
 }

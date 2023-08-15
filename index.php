@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </section>
-            <section class="pages-content services" id="services">
+            <section class="pages-content pages-light" id="services">
                 <div class="container">
                     <div class="pages-inner">
                         <div class="content-title">
@@ -147,6 +147,106 @@
                                 <div class="sevices-item-text">
                                     <h3>Frontend Developer</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pages-content" id="resume">
+                <div class="container">
+                    <div class="pages-inner">
+                        <div class="content-title">
+                            <h2>Summary</h2>
+                            <div class="content-text">
+                                <p>Resume</p>
+                                <span class="content-seperator"></span>
+                            </div>
+                        </div>
+                        <div class="resume-content">
+                            <div class="resume-content-item">
+                                <div class="resume-item-text">
+                                    <h3>My Education</h3>
+                                </div>
+                                <article class="resume-item">
+                                    <p class="resume-history">2000 - 2004</p>
+                                    <h4>Computer Science</h4>
+                                    <p class="organisation">International University</p>
+                                    <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                </article>
+                            </div>
+                            <div class="resume-content-item">
+                                <div class="resume-item-text">
+                                    <h3>My Experience</h3>
+                                </div>
+                                <article class="resume-item">
+                                    <p class="resume-history">2000 - 2004</p>
+                                    <h4>HTML - CSS - Wordpress</h4>
+                                    <p class="organisation">International University</p>
+                                    <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                </article>
+                                <article class="resume-item">
+                                    <p class="resume-history">2000 - 2004</p>
+                                    <h4>JavaScript</h4>
+                                    <p class="organisation">International University</p>
+                                    <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                </article>
+                                <article class="resume-item">
+                                    <p class="resume-history">2000 - 2004</p>
+                                    <h4>Python</h4>
+                                    <p class="organisation">International University</p>
+                                    <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="resume-content">
+                            <div class="resume-content-item">
+                                <div class="resume-item-text">
+                                    <h3>My Skills</h3>
+                                </div>
+                                <div class="resume-skills">
+                                    <article class="resume-seperator">
+                                        <div class="resume-lang">
+                                            <h4>HTML</h4>
+                                            <P>%60</P>
+                                        </div>
+                                        <p class="resume-sep"></p>
+                                    </article>
+                                    <article class="resume-seperator">
+                                        <div class="resume-lang">
+                                            <h4>CSS</h4>
+                                            <P>%60</P>
+                                        </div>
+                                        <p class="resume-sep"></p>
+                                    </article>
+                                    <article class="resume-seperator">
+                                        <div class="resume-lang">
+                                            <h4>Bootstrap</h4>
+                                            <P>%40</P>
+                                        </div>
+                                        <p class="resume-sep"></p>
+                                    </article>
+                                    <article class="resume-seperator">
+                                        <div class="resume-lang">
+                                            <h4>Wordpress</h4>
+                                            <P>%60</P>
+                                        </div>
+                                        <p class="resume-sep"></p>
+                                    </article>
+                                    <article class="resume-seperator">
+                                        <div class="resume-lang">
+                                            <h4>JavaScript</h4>
+                                            <P>%30</P>
+                                        </div>
+                                        <p class="resume-sep"></p>
+                                    </article>
+                                    <article class="resume-seperator">
+                                        <div class="resume-lang">
+                                            <h4>Pyton</h4>
+                                            <P>%20</P>
+                                        </div>
+                                        <p class="resume-sep"></p>
+                                    </article>
                                 </div>
                             </div>
                         </div>
