@@ -25,6 +25,22 @@ $(document).ready(function () {
     });
 });
 
+$(window).on('scroll', function () {
+    let scrollPos = $(window).scrollTop();
+
+    $('.nav-item').each(function () {
+        let currLink = $(this);
+        let refElement = $(currLink.attr('href'));
+
+        if (refElement.position().top <= scrollPos + 50 && refElement.position().top + refElement.height() > scrollPos) {
+            $('.nav-item').removeClass('active');
+            currLink.addClass('active');
+        } else {
+            currLink.removeClass('active');
+        }
+    });
+});
+
 window.onload = function () {
     if (window.location.hash) {
         history.replaceState(null, null, window.location.pathname);
