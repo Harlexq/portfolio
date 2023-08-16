@@ -856,6 +856,28 @@ body {
     resize: vertical;
 }
 
+.contact-content .contact-inner .contact-form .form-btn-cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-content .contact-inner .contact-form .form-btn-cont .form-btn .contact-btn {
+    background-color: var(--blue);
+    font-weight: 500;
+    padding: 0.8rem 2.2rem;
+    transition: all .5s ease;
+    border: none;
+    border-radius: 25rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.contact-content .contact-inner .contact-form .form-btn-cont .form-btn .contact-btn:hover {
+    background-color: #570bd3;
+}
+
 .copyright {
     display: flex;
     align-items: center;

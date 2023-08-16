@@ -283,13 +283,45 @@
                                 <div class="title-item-text">
                                     <h3>Send Us a Note</h3>
                                 </div>
-                                <form action="" class="contact-form">
+                                <?php
+                                if (isset($_POST['submit'])) {
+                                    $to = "serhanbakir5@gmail.com";
+                                    $subject = "Serhan Bakır Contact Form";
+                                    $name = $_POST['name'];
+                                    $email = $_POST['email'];
+                                    $message = $_POST['message'];
+
+                                    $message = "İsim Soyisim: $name\nE-posta Adresi: $email\nMesaj: $message\n";
+
+                                    $headers = "From: $name <$email>\r\n";
+                                    $headers .= "Reply-To: $email\r\n";
+                                    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+                                    $headers .= "Content-Transfer-Encoding: 8bit\r\n";
+
+                                    if (mail($to, $subject, $message, $headers)) {
+                                        $success = "Your message has been sent successfully!";
+                                    } else {
+                                        $error = "Your message could not be sent. Please try again later.";
+                                    }
+                                }
+                                ?>
+                                <?php if (isset($success)) { ?>
+                                    <p style='color:green;'><?php echo $success; ?></p>
+                                <?php } else if (isset($error)) { ?>
+                                    <p style='color:red;'><?php echo $error; ?></p>
+                                <?php } ?>
+                                <form method="post" class="contact-form">
                                     <div class="form-name">
-                                        <input class="name-input" type="text" placeholder="Name">
-                                        <input class="name-input" type="text" placeholder="E-Mail">
+                                        <input class="name-input" id="name" name="name" type="text" maxlength="40" placeholder="Name" required aria-describedby="ErrName">
+                                        <input class="name-input" id="email" name="email" type="mail" maxlength="100" placeholder="E-Mail" required aria-describedby="ErrEmail">
                                     </div>
                                     <div class="form-text">
-                                        <textarea placeholder="Tell us more about your needs..."></textarea>
+                                        <textarea id="message" name="message" placeholder="Tell us more about your needs..." maxlength="40" required aria-describedby="ErrMessage"></textarea>
+                                    </div>
+                                    <div class="form-btn-cont">
+                                        <div class="form-btn">
+                                            <button id="BtnContact" class="contact-btn" type="submit" name="submit">Send Message</button>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
