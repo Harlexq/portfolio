@@ -31,6 +31,14 @@
     .pages-inner .resume-content {
         flex-wrap: wrap;
     }
+
+    .skill {
+        width: 100%;
+    }
+
+    .pages-inner .resume-content {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 817px) {

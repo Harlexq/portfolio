@@ -14,44 +14,17 @@
 
 <body>
 
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <button class="angle-up" id="scrollToTopBtn" type="button"><i class="fa-solid fa-angle-up"></i></button>
+
     <div class="inclusive">
-        <header class="header">
-            <div class="header-inner">
-                <div class="navbar-brand">
-                    <a href="index.php" class="logo">
-                        <img src="assets/img/SerhanBakir.jpg" alt="">
-                        <h1>Serhan Bakır</h1>
-                    </a>
-                </div>
-                <nav class="navbar">
-                    <a href="#home" class="nav-item active">Home</a>
-                    <a href="#about" class="nav-item">About Me</a>
-                    <a href="#services" class="nav-item">What I Do</a>
-                    <a href="#resume" class="nav-item">Resume</a>
-                    <a href="#portfolio" class="nav-item">Portfolio</a>
-                    <a href="#testimonial" class="nav-item">Testimonial</a>
-                    <a href="#contact" class="nav-item">Contact</a>
-                </nav>
-                <nav class="social">
-                    <a href="https://github.com/Harlexq" target="_blank" class="social-item">
-                        <span class="social-tooltip">Github</span>
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/serkan-bakir/" target="_blank" class="social-item">
-                        <span class="social-tooltip">Linkedin</span>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://twitter.com/harlexq" target="_blank" class="social-item">
-                        <span class="social-tooltip">Instagram</span>
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/harlexq" target="_blank" class="social-item">
-                        <span class="social-tooltip">Twitter</span>
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </nav>
-            </div>
-        </header>
+        <?php
+        include("./pages/common/header.php");
+        include("./pages/common/mobileHeader.php");
+        ?>
         <div class="pages">
             <section class="home" id="home">
                 <div class="home-inner">
@@ -71,7 +44,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="hireme">Hire Me</a>
+                        <a href="#contact" class="hireme">Hire Me</a>
                     </div>
                 </div>
                 <a href="#about" class="icon-scroll">
@@ -116,7 +89,7 @@
                                     </li>
                                 </ul>
                                 <div class="about-cv">
-                                    <a href="assets/img/cv.pdf" download="">Download CV</a>
+                                    <a href="assets/img/cv.pdf" download="">Download CV <i class="fa-solid fa-download"></i></a>
                                 </div>
                             </div>
 
@@ -135,20 +108,20 @@
                             </div>
                         </div>
                         <div class="services-content">
-                            <div class="services-item">
+                            <article class="services-item">
                                 <i class="fa-solid fa-desktop"></i>
                                 <div class="sevices-item-text">
                                     <h3>Web Design</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illo!</p>
                                 </div>
-                            </div>
-                            <div class="services-item">
+                            </article>
+                            <article class="services-item">
                                 <i class="fa-solid fa-code"></i>
                                 <div class="sevices-item-text">
                                     <h3>Frontend Developer</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illo!</p>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -165,98 +138,174 @@
                         </div>
                         <div class="resume-content">
                             <div class="resume-content-item">
-                                <div class="resume-item-text">
+                                <div class="title-item-text">
                                     <h3>My Education</h3>
                                 </div>
                                 <article class="resume-item">
-                                    <p class="resume-history">2000 - 2004</p>
-                                    <h4>Computer Science</h4>
-                                    <p class="organisation">International University</p>
+                                    <p class="resume-history">2020</p>
+                                    <h4>Kanuni Sultan Süleyman Mesleki ve Teknik Anadolu Lisesi</h4>
+                                    <p class="organisation">Information Technologies</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                             </div>
                             <div class="resume-content-item">
-                                <div class="resume-item-text">
+                                <div class="title-item-text">
                                     <h3>My Experience</h3>
                                 </div>
                                 <article class="resume-item">
-                                    <p class="resume-history">2000 - 2004</p>
+                                    <p class="resume-history">2022 - 2023</p>
                                     <h4>HTML - CSS - Wordpress</h4>
                                     <p class="organisation">International University</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                                 <article class="resume-item">
-                                    <p class="resume-history">2000 - 2004</p>
+                                    <p class="resume-history">2022 - 2023</p>
                                     <h4>JavaScript</h4>
                                     <p class="organisation">International University</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                                 <article class="resume-item">
-                                    <p class="resume-history">2000 - 2004</p>
+                                    <p class="resume-history">2022 - 2023</p>
                                     <h4>Python</h4>
                                     <p class="organisation">International University</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                             </div>
                         </div>
-                        <div class="resume-content">
-                            <div class="resume-content-item">
-                                <div class="resume-item-text">
-                                    <h3>My Skills</h3>
+                        <div class="title-item-text">
+                            <h3>My Skills</h3>
+                        </div>
+                        <section class="skills-chart">
+                            <div class="skill">
+                                <div class="skill-txt">
+                                    <h4>HTML</h4>
+                                    <p>60%</p>
                                 </div>
-                                <div class="resume-skills">
-                                    <article class="resume-seperator">
-                                        <div class="resume-lang">
-                                            <h4>HTML</h4>
-                                            <P>%60</P>
-                                        </div>
-                                        <p class="resume-sep"></p>
-                                    </article>
-                                    <article class="resume-seperator">
-                                        <div class="resume-lang">
-                                            <h4>CSS</h4>
-                                            <P>%60</P>
-                                        </div>
-                                        <p class="resume-sep"></p>
-                                    </article>
-                                    <article class="resume-seperator">
-                                        <div class="resume-lang">
-                                            <h4>Bootstrap</h4>
-                                            <P>%40</P>
-                                        </div>
-                                        <p class="resume-sep"></p>
-                                    </article>
-                                    <article class="resume-seperator">
-                                        <div class="resume-lang">
-                                            <h4>Wordpress</h4>
-                                            <P>%60</P>
-                                        </div>
-                                        <p class="resume-sep"></p>
-                                    </article>
-                                    <article class="resume-seperator">
-                                        <div class="resume-lang">
-                                            <h4>JavaScript</h4>
-                                            <P>%30</P>
-                                        </div>
-                                        <p class="resume-sep"></p>
-                                    </article>
-                                    <article class="resume-seperator">
-                                        <div class="resume-lang">
-                                            <h4>Pyton</h4>
-                                            <P>%20</P>
-                                        </div>
-                                        <p class="resume-sep"></p>
-                                    </article>
+                                <div class="skill-outer-bar">
+                                    <div class="skill-inner-bar skill-inner-bar-60"></div>
                                 </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-txt">
+                                    <h4>CSS</h4>
+                                    <p>60%</p>
+                                </div>
+                                <div class="skill-outer-bar">
+                                    <div class="skill-inner-bar skill-inner-bar-60"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-txt">
+                                    <h4>Bootstrap</h4>
+                                    <p>60%</p>
+                                </div>
+                                <div class="skill-outer-bar">
+                                    <div class="skill-inner-bar skill-inner-bar-60"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-txt">
+                                    <h4>Wordpress</h4>
+                                    <p>60%</p>
+                                </div>
+                                <div class="skill-outer-bar">
+                                    <div class="skill-inner-bar skill-inner-bar-60"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-txt">
+                                    <h4>Javascript</h4>
+                                    <p>30%</p>
+                                </div>
+                                <div class="skill-outer-bar">
+                                    <div class="skill-inner-bar skill-inner-bar-30"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-txt">
+                                    <h4>Python</h4>
+                                    <p>20%</p>
+                                </div>
+                                <div class="skill-outer-bar">
+                                    <div class="skill-inner-bar skill-inner-bar-20"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="resume-cv">
+                            <a href="assets/img/cv.pdf" download="">Download CV <i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+            </section>
+            <section class="pages-content pages-light" id="contact">
+                <div class="container">
+                    <div class="pages-inner">
+                        <div class="content-title">
+                            <h2>Contact</h2>
+                            <div class="content-text">
+                                <p>Get in Touch</p>
+                                <span class="content-seperator"></span>
+                            </div>
+                        </div>
+                        <div class="contact-content">
+                            <div class="contact-inner">
+                                <div class="title-item-text">
+                                    <h3>Contact Information</h3>
+                                </div>
+                                <div class="contact-info">
+                                    <div class="contact-infor">
+                                        <p class="contact-infor-item"><i class="fa-solid fa-location-dot"></i> Türkiye,Gaziantep</p>
+                                        <a class="contact-infor-item" href="mailto:serhanbakir5@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> serhanbakir5@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="title-item-text">
+                                    <h3>Follow Me</h3>
+                                </div>
+                                <nav class="social">
+                                    <a href="https://github.com/Harlexq" target="_blank" class="social-item">
+                                        <span class="social-tooltip">Github</span>
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/serkan-bakir/" target="_blank" class="social-item">
+                                        <span class="social-tooltip">Linkedin</span>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://twitter.com/harlexq" target="_blank" class="social-item">
+                                        <span class="social-tooltip">Instagram</span>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://twitter.com/harlexq" target="_blank" class="social-item">
+                                        <span class="social-tooltip">Twitter</span>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </nav>
+                            </div>
+                            <div class="contact-inner contact-inner-form">
+                                <div class="title-item-text">
+                                    <h3>Send Us a Note</h3>
+                                </div>
+                                <form action="" class="contact-form">
+                                    <div class="form-name">
+                                        <input class="name-input" type="text" placeholder="Name">
+                                        <input class="name-input" type="text" placeholder="E-Mail">
+                                    </div>
+                                    <div class="form-text">
+                                        <textarea placeholder="Tell us more about your needs..."></textarea>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <footer class="copyright">
+                <p>Copyright © 2023 <a href="https://www.linkedin.com/in/serhan-bakir/" target="_blank">Serhan Bakır</a>. All Rights Reserved.</p>
+            </footer>
         </div>
     </div>
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 
 </body>
 
