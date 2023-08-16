@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $(".nav-item, .hireme, .icon-scroll").on('click', function (event) {
-        $(".nav-item, .hireme, .icon-scroll").not(this).removeClass("active");
+    $(".nav-item, .hireme, .mobile-navbar-item, .icon-scroll").on('click', function (event) {
+        $(".nav-item, .hireme, .mobile-navbar-item, .icon-scroll").not(this).removeClass("active");
         $(this).addClass("active");
 
         if (this.hash !== "") {
@@ -74,3 +74,12 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
 
+function NavbarToggle() {
+    const nav = document.querySelector(".mobile-navbar-content");
+
+    if (nav.style.display === "none" || nav.style.display === "") {
+        nav.style.display = "flex";
+    } else {
+        nav.style.display = "none";
+    }
+}

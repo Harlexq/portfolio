@@ -57,6 +57,10 @@
     .pages-inner .content-title h2 {
         font-size: 4.50rem;
     }
+
+    .mobile-header .mobile-header-inner {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 500px) {}
