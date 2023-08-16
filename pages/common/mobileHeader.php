@@ -6,19 +6,15 @@
         <div class="mobile-nav">
             <nav class="social">
                 <a href="https://github.com/Harlexq" target="_blank" class="social-item">
-                    <span class="social-tooltip">Github</span>
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/serkan-bakir/" target="_blank" class="social-item">
-                    <span class="social-tooltip">Linkedin</span>
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
                 <a href="https://twitter.com/harlexq" target="_blank" class="social-item">
-                    <span class="social-tooltip">Instagram</span>
                     <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="https://twitter.com/harlexq" target="_blank" class="social-item">
-                    <span class="social-tooltip">Twitter</span>
                     <i class="fa-brands fa-twitter"></i>
                 </a>
             </nav>
