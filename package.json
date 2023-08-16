@@ -1,6 +1,20 @@
 {
+  "name": "portfolio",
+  "description": "portfolio",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
     "jquery": "^3.7.0"
-  }
+  },
+  "keywords": [
+    "harlex",
+    "serhan",
+    "serhan bakır"
+  ],
+  "author": "Serhan Bakır",
+  "license": "MIT"
 }
