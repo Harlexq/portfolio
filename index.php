@@ -60,13 +60,13 @@
                         <div class="content-title">
                             <h2>About Me</h2>
                             <div class="content-text">
-                                <p>Know Me More</p>
+                                <p class="darkmode-ignore">Know Me More</p>
                                 <span class="content-seperator"></span>
                             </div>
                         </div>
                         <div class="about-content">
                             <div class="about-text">
-                                <h2>I'm <span>Serhan Bakır,</span> a Frontend Developer</h2>
+                                <h2>I'm <span class="darkmode-ignore">Serhan Bakır,</span> a Frontend Developer</h2>
                                 <p>Hello, I'm Serhan Bakır. In order to enhance my skills in web development and make a solid start to my career, I completed an internship as a Junior Web Developer at an Advertising Agency. I possess intermediate-level knowledge of HTML, CSS, Bootstrap, and JavaScript, and I successfully apply these skills in my projects.<br><br>Furthermore, I continuously update myself on web design, user experience, and digital marketing trends.<br><br>Among my professional goals is designing creative, functional, and impactful websites. I strive to improve myself within the industry, collaborate with fellow experts, and provide a better web development experience by understanding the needs of clients.</p>
                             </div>
                             <div class="about-info">
@@ -77,7 +77,7 @@
                                     </li>
                                     <li class="about-info-item">
                                         <span>E-Mail:</span>
-                                        <a href="mailto:serhanbakir5@gmail.com" target="_blank">serhanbakir5@gmail.com</a>
+                                        <a class="darkmode-ignore" href="mailto:serhanbakir5@gmail.com" target="_blank">serhanbakir5@gmail.com</a>
                                     </li>
                                     <li class="about-info-item">
                                         <span>Age:</span>
@@ -89,7 +89,7 @@
                                     </li>
                                 </ul>
                                 <div class="about-cv">
-                                    <a href="assets/img/cv.pdf" download="">Download CV <i class="fa-solid fa-download"></i></a>
+                                    <a href="assets/img/cv.pdf" download="" class="darkmode-ignore">Download CV <i class="fa-solid fa-download"></i></a>
                                 </div>
                             </div>
 
@@ -103,20 +103,20 @@
                         <div class="content-title">
                             <h2>Services</h2>
                             <div class="content-text">
-                                <p>What I Do?</p>
+                                <p class="darkmode-ignore">What I Do?</p>
                                 <span class="content-seperator"></span>
                             </div>
                         </div>
                         <div class="services-content">
                             <article class="services-item">
-                                <i class="fa-solid fa-desktop"></i>
+                                <i class="darkmode-ignore fa-solid fa-desktop"></i>
                                 <div class="sevices-item-text">
                                     <h3>Web Design</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illo!</p>
                                 </div>
                             </article>
                             <article class="services-item">
-                                <i class="fa-solid fa-code"></i>
+                                <i class="darkmode-ignore fa-solid fa-code"></i>
                                 <div class="sevices-item-text">
                                     <h3>Frontend Developer</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illo!</p>
@@ -132,7 +132,7 @@
                         <div class="content-title">
                             <h2>Summary</h2>
                             <div class="content-text">
-                                <p>Resume</p>
+                                <p class="darkmode-ignore">Resume</p>
                                 <span class="content-seperator"></span>
                             </div>
                         </div>
@@ -142,9 +142,9 @@
                                     <h3>My Education</h3>
                                 </div>
                                 <article class="resume-item">
-                                    <p class="resume-history">2020</p>
+                                    <p class="darkmode-ignore resume-history">2020</p>
                                     <h4>Kanuni Sultan Süleyman Mesleki ve Teknik Anadolu Lisesi</h4>
-                                    <p class="organisation">Information Technologies</p>
+                                    <p class="darkmode-ignore organisation">Information Technologies</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                             </div>
@@ -153,21 +153,21 @@
                                     <h3>My Experience</h3>
                                 </div>
                                 <article class="resume-item">
-                                    <p class="resume-history">2022 - 2023</p>
+                                    <p class="darkmode-ignore resume-history">2022 - 2023</p>
                                     <h4>HTML - CSS - Wordpress</h4>
-                                    <p class="organisation">International University</p>
+                                    <p class="darkmode-ignore organisation">International University</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                                 <article class="resume-item">
-                                    <p class="resume-history">2022 - 2023</p>
+                                    <p class="darkmode-ignore resume-history">2022 - 2023</p>
                                     <h4>JavaScript</h4>
-                                    <p class="organisation">International University</p>
+                                    <p class="darkmode-ignore organisation">International University</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                                 <article class="resume-item">
-                                    <p class="resume-history">2022 - 2023</p>
+                                    <p class="darkmode-ignore resume-history">2022 - 2023</p>
                                     <h4>Python</h4>
-                                    <p class="organisation">International University</p>
+                                    <p class="darkmode-ignore organisation">International University</p>
                                     <p class="desc">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                                 </article>
                             </div>
@@ -232,7 +232,7 @@
                             </div>
                         </section>
                         <div class="resume-cv">
-                            <a href="assets/img/cv.pdf" download="">Download CV <i class="fa-solid fa-download"></i></a>
+                            <a class="darkmode-ignore" href="assets/img/cv.pdf" download="">Download CV <i class="fa-solid fa-download"></i></a>
                         </div>
                     </div>
             </section>
@@ -242,7 +242,7 @@
                         <div class="content-title">
                             <h2>Contact</h2>
                             <div class="content-text">
-                                <p>Get in Touch</p>
+                                <p class="darkmode-ignore">Get in Touch</p>
                                 <span class="content-seperator"></span>
                             </div>
                         </div>
@@ -253,8 +253,8 @@
                                 </div>
                                 <div class="contact-info">
                                     <div class="contact-infor">
-                                        <p class="contact-infor-item"><i class="fa-solid fa-location-dot"></i> Türkiye,Gaziantep</p>
-                                        <a class="contact-infor-item" href="mailto:serhanbakir5@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> serhanbakir5@gmail.com</a>
+                                        <p class="contact-infor-item"><i class="darkmode-ignore fa-solid fa-location-dot"></i> Türkiye,Gaziantep</p>
+                                        <a class="contact-infor-item" href="mailto:serhanbakir5@gmail.com" target="_blank"><i class="darkmode-ignore fa-regular fa-envelope"></i> serhanbakir5@gmail.com</a>
                                     </div>
                                 </div>
                                 <div class="title-item-text">
@@ -312,15 +312,15 @@
                                 <?php } ?>
                                 <form method="post" class="contact-form">
                                     <div class="form-name">
-                                        <input class="name-input" id="name" name="name" type="text" maxlength="40" placeholder="Name" required aria-describedby="ErrName">
-                                        <input class="name-input" id="email" name="email" type="mail" maxlength="100" placeholder="E-Mail" required aria-describedby="ErrEmail">
+                                        <input class="darkmode-ignore name-input" id="name" name="name" type="text" maxlength="40" placeholder="Name" required aria-describedby="ErrName">
+                                        <input class="darkmode-ignore name-input" id="email" name="email" type="mail" maxlength="100" placeholder="E-Mail" required aria-describedby="ErrEmail">
                                     </div>
                                     <div class="form-text">
-                                        <textarea id="message" name="message" placeholder="Tell us more about your needs..." maxlength="40" required aria-describedby="ErrMessage"></textarea>
+                                        <textarea class="darkmode-ignore" id="message" name="message" placeholder="Tell us more about your needs..." maxlength="40" required aria-describedby="ErrMessage"></textarea>
                                     </div>
                                     <div class="form-btn-cont">
                                         <div class="form-btn">
-                                            <button id="BtnContact" class="contact-btn" type="submit" name="submit">Send Message</button>
+                                            <button id="BtnContact" class="darkmode-ignore contact-btn" type="submit" name="submit">Send Message</button>
                                         </div>
                                     </div>
                                 </form>
@@ -330,13 +330,33 @@
                 </div>
             </section>
             <footer class="copyright">
-                <p>Copyright © 2023 <a href="https://www.linkedin.com/in/serhan-bakir/" target="_blank">Serhan Bakır</a>. All Rights Reserved.</p>
+                <p>Copyright © 2023 <a class="darkmode-ignore" href="https://www.linkedin.com/in/serhan-bakir/" target="_blank">Serhan Bakır</a>. All Rights Reserved.</p>
             </footer>
         </div>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+            bottom: '80px',
+            right: '30px',
+            left: 'unset',
+            time: '1s',
+            mixColor: '#fff',
+            backgroundColor: '#fff',
+            buttonColorDark: '#100f2c',
+            buttonColorLight: '#fff',
+            saveInCookies: true,
+            label: '🌓',
+            autoMatchOsTheme: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
 
 
 </body>

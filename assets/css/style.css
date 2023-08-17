@@ -597,6 +597,10 @@ body {
     user-select: none;
 }
 
+.darkmode--activated .content-title h2 {
+    color: #000;
+}
+
 .content-title .content-text {
     position: absolute;
     top: 65px;
@@ -609,6 +613,10 @@ body {
 .content-title .content-text p {
     font-weight: 600;
     font-size: 2.25rem;
+}
+
+.darkmode--activated .content-title .content-text p {
+    color: #000;
 }
 
 .content-title .content-text .content-seperator {
@@ -802,6 +810,11 @@ body {
     font-weight: 600;
 }
 
+.darkmode--activated .skill-txt h4,
+.darkmode--activated .skill-txt p {
+    color: #000;
+}
+
 .skill-outer-bar,
 .skill-inner-bar {
     height: 0.75em;
@@ -844,6 +857,19 @@ body {
 
 .resume-cv a:hover {
     background-color: #6c757d;
+    color: var(--white);
+}
+
+.darkmode--activated .resume-cv a {
+    border: 1px solid #000;
+    color: #000;
+    padding: .8rem 2.6rem;
+    transition: all .5s ease;
+    border-radius: 50rem;
+}
+
+.darkmode--activated .resume-cv a:hover {
+    background-color: #000;
     color: var(--white);
 }
 
