@@ -41,6 +41,10 @@ body {
     margin: 0 auto;
 }
 
+.darkmode-toggle {
+    z-index: 1999;
+}
+
 #preloader {
     position: fixed;
     top: 0;
