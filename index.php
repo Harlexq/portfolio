@@ -279,44 +279,51 @@
                                     </a>
                                 </nav>
                             </div>
+                            <?php
+                            if (isset($_POST['submit'])) {
+                                $to = "serhanbakir5@gmail.com";
+                                $subject = "Eirtis Form Mesajı";
+                                $name = $_POST['name'];
+                                $email = $_POST['email'];
+                                $message = $_POST['message'];
+
+                                $message = "İsim Soyisim: $name\nE-posta Adresi: $email\nMesaj: $message\n";
+
+                                $headers = "From: $name <$email>\r\n";
+                                $headers .= "Reply-To: $email\r\n";
+                                $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+                                $headers .= "Content-Transfer-Encoding: 8bit\r\n";
+
+                                if (mail($to, $subject, $message, $headers)) {
+                                    $success = "Mesajınız başarıyla gönderildi!";
+                                } else {
+                                    $error = "Mesajınız gönderilemedi. Lütfen daha sonra tekrar deneyin.";
+                                }
+                            }
+                            ?>
                             <div class="contact-inner contact-inner-form">
                                 <div class="title-item-text">
                                     <h3>Send Us a Note</h3>
                                 </div>
-                                <?php
-                                if (isset($_POST['submit'])) {
-                                    $to = "serhanbakir5@gmail.com";
-                                    $subject = "Serhan Bakır Contact Form";
-                                    $name = $_POST['name'];
-                                    $email = $_POST['email'];
-                                    $message = $_POST['message'];
-
-                                    $message = "İsim Soyisim: $name\nE-posta Adresi: $email\nMesaj: $message\n";
-
-                                    $headers = "From: $name <$email>\r\n";
-                                    $headers .= "Reply-To: $email\r\n";
-                                    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-                                    $headers .= "Content-Transfer-Encoding: 8bit\r\n";
-
-                                    if (mail($to, $subject, $message, $headers)) {
-                                        $success = "Your message has been sent successfully!";
-                                    } else {
-                                        $error = "Your message could not be sent. Please try again later.";
-                                    }
-                                }
-                                ?>
                                 <?php if (isset($success)) { ?>
-                                    <p style='color:green;'><?php echo $success; ?></p>
+                                    <p style='color: green;'><?php echo $success; ?></p>
                                 <?php } else if (isset($error)) { ?>
-                                    <p style='color:red;'><?php echo $error; ?></p>
+                                    <p style='color: red;'><?php echo $error; ?></p>
                                 <?php } ?>
                                 <form method="post" class="contact-form">
                                     <div class="form-name">
-                                        <input class="darkmode-ignore name-input" id="name" name="name" type="text" maxlength="40" placeholder="Name" required aria-describedby="ErrName">
-                                        <input class="darkmode-ignore name-input" id="email" name="email" type="mail" maxlength="100" placeholder="E-Mail" required aria-describedby="ErrEmail">
+                                        <div class="form-inputs">
+                                            <input class="darkmode-ignore name-input" id="name" name="name" type="text" maxlength="40" placeholder="Name" required aria-describedby="ErrName">
+                                            <p class="invalid-feedback darkmode-ignore" id="ErrName"></p>
+                                        </div>
+                                        <div class="form-inputs">
+                                            <input class="darkmode-ignore name-input" id="email" name="email" type="email" maxlength="100" placeholder="E-Mail" required aria-describedby="ErrEmail">
+                                            <p class="invalid-feedback darkmode-ignore" id="ErrEmail"></p>
+                                        </div>
                                     </div>
                                     <div class="form-text">
-                                        <textarea class="darkmode-ignore" id="message" name="message" placeholder="Tell us more about your needs..." maxlength="40" required aria-describedby="ErrMessage"></textarea>
+                                        <textarea id="message" name="message" class="darkmode-ignore" placeholder="Tell us more about your needs..." required maxlength="500" aria-describedby="ErrMessage"></textarea>
+                                        <p class="invalid-feedback darkmode-ignore" id="ErrMessage"></p>
                                     </div>
                                     <div class="form-btn-cont">
                                         <div class="form-btn">
@@ -324,6 +331,11 @@
                                         </div>
                                     </div>
                                 </form>
+                                <?php if (isset($resultMessage)) { ?>
+                                    <div class="result-message">
+                                        <?php echo $resultMessage; ?>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>

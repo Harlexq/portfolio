@@ -922,10 +922,15 @@ body {
 
 .contact-content .contact-inner .contact-form .form-name {
     margin: 13px 0 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+}
+
+.contact-content .contact-inner .contact-form .form-name .form-inputs {
+    margin: 0 0 30px 0;
+}
+
+.contact-content .contact-inner .contact-form .form-name .form-inputs .invalid-feedback {
+    color: red;
+    margin-top: 2px;
 }
 
 .contact-content .contact-inner .contact-form .form-name .name-input,
@@ -939,8 +944,7 @@ body {
     padding: 0.81rem 0.96rem;
     font-size: 17px;
     transition: 0.3s;
-    flex: 0 1 auto;
-    width: 47%;
+    width: 100%;
 }
 
 .contact-content .contact-inner .contact-form .form-name .name-input:focus,
